@@ -126,14 +126,14 @@ section {
 .search-type-button{
   position: relative;
   font-size: 16px;
-color: #F6BC25;
-letter-spacing: 0;
-font-weight: 700;
-border: 3px solid #F6BC25;
-border-radius: 6px;
-outline: 0;
-background: none;
-transition: 1s ease-in-out;
+  color: #F6BC25;
+  letter-spacing: 0;
+  font-weight: 700;
+  border: 3px solid #F6BC25;
+  border-radius: 6px;
+  outline: 0;
+  background: none;
+  transition: 1s ease-in-out;
 }
 .search-type-button:hover, .search-type-button:active{
   color: #004A80;
@@ -173,7 +173,12 @@ transition: 1s ease-in-out;
   width: 180px;
   margin-left: 20px;
 }
-
+.btn-form-submit:hover{
+  background: #F2DA56;
+}
+.btn-form-submit:active, .btn-form-submit:focus{
+  background: #F6BC25;
+}
 .input-group > .form-control {
   height: 70px;
   background: #FFF;
