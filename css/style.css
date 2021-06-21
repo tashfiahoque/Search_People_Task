@@ -122,6 +122,7 @@ section {
   font-size: 16px;
   letter-spacing: 0;
   text-transform: uppercase;
+  display: inline;
 }
 .search-type-button{
   position: relative;
@@ -150,6 +151,18 @@ section {
   height: 12px;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   
+}
+
+@media (max-width: 767px) {
+  .search-type h2 {
+    display: none;
+  }
+  .search-type-button{
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid #F6BC25;
+    border-radius: 6px;
+  }
 }
 /* ************************************************************
 ***************************************************************
@@ -237,8 +250,16 @@ section {
   .btn-form-submit {
     margin: 12px 0 0 0;
   }
+  .input-group.error .error-msg {
+    bottom: 58px;
+    padding: 4px 28px;
+  }
 }
-
+@media (max-width: 991.98px) { 
+  .input-group > .form-control {
+    height: 60px;
+  }
+}
 /* ************************************************************
 ***************************************************************
 --- [SECTION] Above the Fold ---
@@ -410,7 +431,6 @@ section {
 .search-again {
   background: #004A80;
 }
-
 @media (min-width: 992px) {
   .search-again {
     padding: 80px 0;

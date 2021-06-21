@@ -10,7 +10,6 @@ $(document).ready(function () {
     $('.email-search-form').css('display', 'none');
   });
 
-
   $("#email-search").on("click", function (e) {
     e.preventDefault();
     localStorage.clear(); //Clears storage for next request
@@ -40,6 +39,10 @@ $(document).ready(function () {
         .catch((e) => console.log(e));
     } else if (x !== true) {
       document.querySelector('input[type="text"]').parentNode.classList.add("error");
+      var x = window.matchMedia("(max-width: 767px)")
+      if (x.matches) {
+        $('.btn-form-submit').css('margin-top', '40px');
+      }
     }
 
   });
@@ -79,6 +82,10 @@ $(document).ready(function () {
           .catch((e) => console.log(e));
       } else if (x !== true) {
         document.querySelector('input[type="text"]').parentNode.classList.add("error");
+        var x = window.matchMedia("(max-width: 767px)")
+        if (x.matches) {
+          $('.btn-form-submit').css('margin-top', '40px');
+        }
       }
     }
 
@@ -113,6 +120,11 @@ $(document).ready(function () {
         .catch((e) => console.log(e));
     } else if (x !== true) {
       document.querySelector('input[name="phone"]').parentNode.classList.add("error");
+      var x = window.matchMedia("(max-width: 767px)")
+      if (x.matches) {
+        $('.btn-form-submit').css('margin-top', '40px');
+        $('.input-group.error .error-msg ').css('padding', '4px 25px');
+      }
     }
   });
 
@@ -150,6 +162,10 @@ $(document).ready(function () {
           .catch((e) => console.log(e));
       } else if (x !== true) {
         document.querySelector('input[name="phone"]').parentNode.classList.add("error");
+        if (x.matches) {
+          $('.btn-form-submit').css('margin-top', '40px');
+          $('.input-group.error .error-msg ').css('padding', '4px 25px');
+        }
       }
     }
     $('.phone-search-form').val('');
