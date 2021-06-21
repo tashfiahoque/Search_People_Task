@@ -64,6 +64,9 @@ section {
 .text-secondary {
   color: #4A4A4A !important;
 }
+.main{
+  display: block;
+}
 
 @media (max-width: 991px) {
   h1 {
@@ -75,7 +78,6 @@ section {
     font-size: 20px;
   }
 }
-
 @media (max-width: 767px) {
   h1 {
     font-size: 32px;
@@ -104,13 +106,54 @@ section {
   height: 25px;
 }
 @media (max-width: 767px) {
- .nav-logo {
-  width: 115px;
- }
- .nav-icon{
-  width: 20px;
-  height: 20px;
+  .nav-logo {
+    width: 115px;
+  }
+  .nav-icon{
+    width: 20px;
+    height: 20px;
+  }
 }
+/* ************************************************************
+***************************************************************
+--- Loader ---
+***************************************************************
+************************************************************ */
+
+.loader {
+  display: none;
+  background: #F8F8F8;
+  min-height: 455px;
+}
+.custom-loader {
+  border: 10px solid #F6BC25;
+  border-radius: 50%;
+  border-top: 10px solid white;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 991px) {
+  .loader {
+    min-height: 250px;
+  }
+}
+@media (max-width: 767px) {
+
 }
 /* ************************************************************
 ***************************************************************
@@ -381,11 +424,9 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-
 .result-wrap {
   display: none;
 }
-
 .result-card {
   max-width: 980px;
   background: #fff;
@@ -411,9 +452,6 @@ section {
 }
 
 @media (max-width: 991px) {
-  .result {
-    min-height: 512px;
-  }
   .result-avatar {
     width: 63px;
     height: 63px;
@@ -426,9 +464,6 @@ section {
 }
 
 @media (max-width: 767px) {
-  .result {
-    min-height: 306px;
-  }
   .result-avatar {
     display: none;
   }

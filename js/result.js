@@ -36,7 +36,6 @@ $(document).ready(function () {
             "<p style='margin-bottom: 0'>" + `${retreivedObject.relatives[relative]}` + "</p>"
           );
         }
-
         $(".result-wrap").show();
       }
     }
