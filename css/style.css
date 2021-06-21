@@ -93,10 +93,24 @@ section {
 
 .navbar {
   background: #004A80;
-}
-
-.navbar {
   padding: 20px 16px;
+}
+.nav-logo {
+  width: 173px;
+   height: 25px; 
+}
+.nav-icon{
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 767px) {
+ .nav-logo {
+  width: 115px;
+ }
+ .nav-icon{
+  width: 20px;
+  height: 20px;
+}
 }
 /* ************************************************************
 ***************************************************************
