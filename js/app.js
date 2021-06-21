@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+  // Create toggle functionality between email and phone numbers
+
   $("#btn-search-email").on("click", function (e) {
     e.preventDefault();
     $('.email-search-form').css('display', 'block');
@@ -10,6 +13,7 @@ $(document).ready(function () {
     $('.email-search-form').css('display', 'none');
   });
 
+  // search by email address
   $("#email-search").on("click", function (e) {
     e.preventDefault();
     localStorage.clear(); //Clears storage for next request
@@ -93,7 +97,7 @@ $(document).ready(function () {
 
   });
 
-
+  // search by phone numbers
   $("#phone-search").on("click", function (e) {
     e.preventDefault();
     localStorage.clear(); //Clears storage for next request
