@@ -17,7 +17,10 @@
 --- General ---
 ***************************************************************
 ************************************************************ */
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Lato', sans-serif;
   color: #000;
@@ -95,13 +98,54 @@ section {
 .navbar {
   padding: 20px 16px;
 }
+/* ************************************************************
+***************************************************************
+--- Search Type ---
+***************************************************************
+************************************************************ */
 
+.search-type h2 {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.search-type-button{
+  position: relative;
+  font-size: 16px;
+color: #F6BC25;
+letter-spacing: 0;
+font-weight: 700;
+border: 3px solid #F6BC25;
+border-radius: 6px;
+outline: 0;
+background: none;
+transition: 1s ease-in-out;
+}
+.search-type-button:hover, .search-type-button:active{
+  color: #004A80;
+  background: #F6BC25;
+  border-radius: 6px 6px 6px 0 0 0 6px;
+}
+.search-type-button:hover::after, .search-type-button:active::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 10px);
+  background: #F6BC25;
+  width: 20px;
+  height: 12px;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  
+}
 /* ************************************************************
 ***************************************************************
 --- Search Form ---
 ***************************************************************
 ************************************************************ */
 
+.phone-search-form{
+  display: none;
+}
 .btn-form-submit {
   font-size: 24px;
   font-weight: bold;
