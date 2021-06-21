@@ -5,137 +5,151 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Start Your Search!</title>
+  <!-- Font Links -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CDN Link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Custom stylesheet Link -->
+  <link rel="stylesheet" href="css/style.css" type='text/css' media='all'>
+
 </head>
 
 <body>
   <!-- Header Starts -->
-  <!-- Navbar Starts -->
-  <nav class="navbar d-flex justify-content-between">
+  <header>
+    <!-- Navbar Starts -->
+    <nav class="navbar d-flex justify-content-between">
+      <div class="container">
+        <a href="./index.html">
+          <img src="img/logo.svg" class="nav-logo" alt="Logo">
+        </a>
+        <div>
+          <img src="img/icn_search.svg" class="nav-icon" alt="Search">
+          <img src="img/icn_person.svg" class="ml-4 nav-icon" alt="Profile">
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+    <!-- Loader section start -->
+    <section class="loader">
+      <div class="custom-loader"></div>
+    </section>
+    <!-- Loader section end -->
+    <!-- Toggle section with loader start -->
+    <section class="toggle-section">
+      <!-- Above the fold section Starts -->
+      <section class="above-the-fold">
+        <div class="container">
+          <div class="headline text-white text-center mb-4 mb-md-5">
+            <h1 class="mb-3">Start Your Search!</h1>
+            <h2>Look up for people’s name, photos and online profiles with their email address or phone number. See what
+              you
+              find!</h2>
+          </div>
+          <div class="search-type mb-4">
+            <h2 class="text-white">Type of Search:</h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <button type="button" class="btn search-type-button text-uppercase" id="btn-search-email">email
+              address</button>
+            &nbsp&nbsp&nbsp
+            <button type="button" class="btn search-type-button text-uppercase" id="btn-search-phone">phone
+              number</button>
+          </div>
+          <form class="email-search-form">
+            <div class="input-group">
+              <input class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
+              <p class="error-msg">Please enter a valid email address</p>
+              <button id="email-search" class="btn btn-form-submit text-uppercase" type="submit">Go!</button>
+            </div>
+            <div class="d-flex justify-content-start justify-content-md-end align-items-center mt-4">
+              <img src="img/icn_lock.svg" alt="lock">
+              <p class="form-subtext">People in the search won't be notified.</p>
+            </div>
+          </form>
+          <form class="phone-search-form">
+            <div class="input-group">
+              <input class="form-control" id="phone-search-field" type="text" name="phone"
+                placeholder="Enter Phone Number" />
+              <p class="error-msg">Please enter a valid phone number</p>
+              <button id="phone-search" class="btn btn-form-submit text-uppercase" type="submit">Go!</button>
+            </div>
+            <div class="d-flex justify-content-start justify-content-md-end align-items-center mt-4">
+              <img src="img/icn_lock.svg" alt="lock">
+              <p class="form-subtext">People in the search won't be notified.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Above the fold section ends -->
+  </header>
+  <!-- Header Ends -->
+  <!-- Feature section start -->
+  <section class="features">
     <div class="container">
-      <a href="./index.html">
-        <img src="img/logo.svg" class="nav-logo" alt="Logo">
-      </a>
-      <div>
-        <img src="img/icn_search.svg" class="nav-icon" alt="Search">
-        <img src="img/icn_person.svg" class="ml-4 nav-icon" alt="Profile">
+      <div class="headline">
+        <h1 class="text-primary text-center mb-2 mb-md-4">Here's How It Works</h1>
+        <h2 class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</h2>
+      </div>
+      <div class="row d-flex">
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
+          <div class="list-circle">1</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
+          <div class="list-circle">2</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
+          <div class="list-circle">3</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
+          <div class="list-circle">4</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item mb-md-0">
+          <div class="list-circle">5</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="list-item col-md-6 d-flex align-items-lg-center flex-item mb-md-0">
+          <div class="list-circle">6</div>
+          <div class="list-text">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  <!-- Navbar Ends -->
-  <section class="loader">
-    <div class="custom-loader"></div>
   </section>
-  <header class="main">
-    <!-- Above the fold Starts -->
-    <section class="above-the-fold">
-      <div class="container">
-        <div class="headline text-white text-center mb-4 mb-md-5">
-          <h1 class="mb-3">Start Your Search!</h1>
-          <h2>Look up for people’s name, photos and online profiles with their email address or phone number. See what
-            you
-            find!</h2>
-        </div>
-        <div class="search-type mb-4">
-          <h2 class="text-white">Type of Search:</h2>
-          &nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" class="btn search-type-button" id="btn-search-email">EMAIL
-            ADDRESS</button>
-          &nbsp&nbsp&nbsp<button type="button" class="btn search-type-button" id="btn-search-phone">PHONE
-            NUMBER</button>
-        </div>
-        <form class="email-search-form">
-          <div class="input-group">
-            <input class="form-control" type="text" name="email" placeholder="Enter an Email Address" />
-            <p class="error-msg">Please enter a valid email address</p>
-            <button id="email-search" class="btn btn-form-submit text-uppercase" type="submit">Go!</button>
-          </div>
-          <div class="d-flex justify-content-start justify-content-md-end align-items-center mt-4">
-            <img src="img/icn_lock.svg" alt="lock">
-            <p class="form-subtext">People in the search won't be notified.</p>
-          </div>
-        </form>
-        <form class="phone-search-form">
-          <div class="input-group">
-            <input class="form-control" id="phone-search-field" type="text" name="phone"
-              placeholder="Enter Phone Number" />
-            <p class="error-msg">Please enter a valid phone number</p>
-            <button id="phone-search" class="btn btn-form-submit text-uppercase" type="submit">Go!</button>
-          </div>
-          <div class="d-flex justify-content-start justify-content-md-end align-items-center mt-4">
-            <img src="img/icn_lock.svg" alt="lock">
-            <p class="form-subtext">People in the search won't be notified.</p>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Above the fold Ends -->
-    <!-- Header Ends -->
-    <section class="features">
-      <div class="container">
-        <div class="headline">
-          <h1 class="text-primary text-center mb-2 mb-md-4">Here's How It Works</h1>
-          <h2 class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</h2>
-        </div>
-        <div class="row d-flex">
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
-            <div class="list-circle">1</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
-            <div class="list-circle">2</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
-            <div class="list-circle">3</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item">
-            <div class="list-circle">4</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item mb-md-0">
-            <div class="list-circle">5</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="list-item col-md-6 d-flex align-items-lg-center flex-item mb-md-0">
-            <div class="list-circle">6</div>
-            <div class="list-text">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </header>
+  <!-- Feature section end -->
+  </section>
+  <!-- Toggle section with loader ends -->
+  <!-- Footer starts -->
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
@@ -151,11 +165,13 @@
       </div>
     </div>
   </footer>
-
+  <!-- Footer starts -->
+  <!-- jquery script -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <!-- Custom Script -->
   <script src="js/app.js"></script>
 </body>
 
