@@ -35,11 +35,13 @@ $(document).ready(function () {
         .then(function (contents) {
           localStorage.setItem("userObject", contents);
           window.location.href = "result.html";
+          $('.email-search-form')[0].reset();
         })
         .catch((e) => console.log(e));
     } else if (x !== true) {
       document.querySelector('input[type="text"]').parentNode.classList.add("error");
     }
+
   });
 
   $('input[type="text"]').keypress(function (e) {
@@ -72,12 +74,14 @@ $(document).ready(function () {
           .then(function (contents) {
             localStorage.setItem("userObject", contents);
             window.location.href = "result.html";
+            $('.email-search-form')[0].reset();
           })
           .catch((e) => console.log(e));
       } else if (x !== true) {
         document.querySelector('input[type="text"]').parentNode.classList.add("error");
       }
     }
+
   });
 
 
@@ -104,6 +108,7 @@ $(document).ready(function () {
         .then(function (contents) {
           localStorage.setItem("userObject", contents);
           window.location.href = "result.html";
+          $('.phone-search-form')[0].reset();
         })
         .catch((e) => console.log(e));
     } else if (x !== true) {
@@ -140,15 +145,14 @@ $(document).ready(function () {
           .then(function (contents) {
             localStorage.setItem("userObject", contents);
             window.location.href = "result.html";
+            $('.phone-search-form')[0].reset();
           })
           .catch((e) => console.log(e));
       } else if (x !== true) {
         document.querySelector('input[name="phone"]').parentNode.classList.add("error");
       }
     }
+    $('.phone-search-form').val('');
   });
-
-
-
 
 });
