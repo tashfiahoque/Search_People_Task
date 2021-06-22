@@ -29,8 +29,8 @@ $(document).ready(function () {
     }
 
     if (x === true) {
-      $('.loader').show();
       $('.toggle-section').hide();
+      $('.loader').show();
       document.querySelector('input[type="text"]').parentNode.classList.remove("error");
       const proxyurl = "";
       const url = 'https://ltv-data-api.herokuapp.com/api/v1/records.json?email=' + email;
@@ -73,8 +73,8 @@ $(document).ready(function () {
       var x;
 
       if (x === true) {
-        $('.loader').show();
         $('.toggle-section').hide();
+        $('.loader').show();
         const proxyurl = "";
         const url =
           'https://ltv-data-api.herokuapp.com/api/v1/records.json?email=' + email;
@@ -112,8 +112,8 @@ $(document).ready(function () {
     }
 
     if (x === true) {
-      $('.loader').show();
       $('.toggle-section').hide();
+      $('.loader').show();
       document.querySelector('input[name="phone"]').parentNode.classList.remove("error");
       const proxyurl = "";
       const url =
@@ -157,8 +157,8 @@ $(document).ready(function () {
       localStorage.clear(); //Clears storage for next request
 
       if (x === true) {
-        $('.loader').show();
         $('.toggle-section').hide();
+        $('.loader').show();
         const proxyurl = "";
         const url =
           'https://ltv-data-api.herokuapp.com/api/v1/records.json?phone=' + phone;
